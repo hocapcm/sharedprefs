@@ -18,20 +18,20 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     Button btnBlack,btnRed,btnBlue,btnGreen;
-    // Current count.
+   
     private int count = 0;
-    // Current background color.
+  
     private int color;
-    // Text view to display both count and color.
+   
     private TextView tvShow;
 
-    // Key for current count
+
     private final String COUNT_KEY = "count";
-    // Key for current color
+
     private final String COLOR_KEY = "color";
-    // Shared preferences object
+
     private SharedPreferences mPreferences;
-    // Name of shared preferences file
+  
     private static final String mSharedPrefFile = "sharedprefs1";
 
     @Override
@@ -39,7 +39,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Initialize views, color
         tvShow = (TextView) findViewById(R.id.tvShow);
         btnBlack = (Button) findViewById(R.id.btnBlack);
         btnBlue = (Button) findViewById(R.id.btnBlue);
